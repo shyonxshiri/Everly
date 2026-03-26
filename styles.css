@@ -122,11 +122,14 @@ body {
 /* Mobile */
 @media (max-width: 768px) {
     .navbar {
-        padding: 0.75rem 1rem;
+        padding: 0.5rem 1rem;
+        justify-content: center;
     }
     
     .hamburger {
         display: flex;
+        position: absolute;
+        right: 1rem;
     }
     
     .navbar-links {
