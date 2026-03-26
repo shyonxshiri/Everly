@@ -21,7 +21,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.75rem 1rem;
+    padding: 0.5rem 1rem;
     position: fixed;
     top: 0;
     width: 100%;
@@ -29,12 +29,11 @@ body {
     background-color: rgba(255, 255, 255, 0.85);
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(50px);
-    border-radius: 0 0 12px 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), 0 4px 10px rgba(0, 0, 0, 0.12);
 }
 
 .navbar-logo {
-    height: 2.2rem;
+    height: 5.5rem;
     flex-shrink: 0;
 }
 
@@ -98,12 +97,12 @@ body {
 /* Tablet and Desktop */
 @media (min-width: 769px) {
     .navbar {
-        padding: 0.75rem 2rem;
+        padding: 0.5rem 2rem;
         justify-content: flex-start;
     }
     
     .navbar-logo {
-        height: 3rem;
+        height: 5.5rem;
         margin-right: auto;
     }
     
@@ -208,20 +207,22 @@ body {
 }
 
 .hero h1 {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
     color: white;
     text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     font-family: Georgia, Garamond, serif;
+    white-space: nowrap;
 }
 
 .hero p {
     font-size: 1.5rem;
     color: white;
     max-width: 42rem;
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem auto;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -384,7 +385,7 @@ body {
 }
 
 .about-content {
-    max-width: 48rem;
+    width: 100%;
     margin: 0 auto;
     padding: 3rem 1rem;
     background-position: center;
