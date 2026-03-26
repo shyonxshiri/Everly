@@ -235,13 +235,14 @@ body {
     }
     
     .hero h1 {
-        font-size: 1.75rem;
-        margin-bottom: 1rem;
+        font-size: 1.3rem;
+        margin-bottom: 0.75rem;
     }
     
     .hero p {
-        font-size: 1.125rem;
+        font-size: 0.95rem;
         margin-bottom: 1.5rem;
+        max-width: 90%;
     }
 }
 
