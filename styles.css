@@ -214,7 +214,6 @@ body {
     color: white;
     text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     font-family: Georgia, Garamond, serif;
-    white-space: nowrap;
 }
 
 .hero p {
@@ -234,7 +233,6 @@ body {
     .hero h1 {
         font-size: 1.75rem;
         margin-bottom: 1rem;
-        white-space: nowrap;
     }
     
     .hero p {
@@ -391,6 +389,7 @@ body {
     padding: 3rem 1rem;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .about-content p {
