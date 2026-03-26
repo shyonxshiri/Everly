@@ -24,7 +24,10 @@ document.addEventListener('DOMContentLoaded', function() {
     if (tourButton) {
         tourButton.addEventListener('click', function(e) {
             e.preventDefault();
-            alert('Thank you for your interest! Please call us at 408-316-3016 to schedule a tour.');
+            const contactSection = document.querySelector('#contact');
+            if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'smooth' });
+            }
         });
     }
     
