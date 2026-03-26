@@ -7,7 +7,7 @@ import Link from 'next/link'
 function Navbar() {
   return (
     <nav className="flex items-center px-4 md:px-8 py-1 md:py-1 fixed top-0 w-full z-50" style={{ backgroundColor: 'rgba(255, 255, 255, 0.85)', borderBottom: '1px solid rgba(255, 255, 255, 0.5)', backdropFilter: 'blur(50px)', borderRadius: '0 0 12px 12px', boxShadow: '0 8px 20px rgba(0, 0, 0, 0.15), 0 4px 10px rgba(0, 0, 0, 0.12)' }}>
-      <img src="/IMG_2086 (1) 2.png" alt="EverlyCareHome Logo" className="h-14 md:h-24" style={{ marginLeft: '-8px' }} />
+      <img src="public/IMG_2086 (1) 2.png" alt="EverlyCareHome Logo" className="h-14 md:h-24" style={{ marginLeft: '-8px' }} />
       <div className="flex gap-0 text-lg md:text-xl font-semibold absolute left-1/2 transform -translate-x-1/2">
         <a href="#home" className="px-2 md:px-3 py-2 rounded-lg transition duration-200" style={{ color: '#68838c' }} onMouseEnter={(e) => { e.currentTarget.style.textShadow = '0 0 10px rgba(104, 131, 140, 0.7)'; }} onMouseLeave={(e) => { e.currentTarget.style.textShadow = 'none'; }} onMouseDown={(e) => { e.currentTarget.style.transform = 'scale(0.95)'; }} onMouseUp={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}>Home</a>
         <a href="#about" className="px-2 md:px-3 py-2 rounded-lg transition duration-200" style={{ color: '#68838c' }} onMouseEnter={(e) => { e.currentTarget.style.textShadow = '0 0 10px rgba(104, 131, 140, 0.7)'; }} onMouseLeave={(e) => { e.currentTarget.style.textShadow = 'none'; }} onMouseDown={(e) => { e.currentTarget.style.transform = 'scale(0.95)'; }} onMouseUp={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}>About</a>
