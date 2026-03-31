@@ -358,7 +358,7 @@ body {
 }
 
 .about-header {
-    min-height: 12rem;
+    min-height: 24rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -379,7 +379,7 @@ body {
 }
 
 .about-header h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
     color: white;
     text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -426,7 +426,7 @@ body {
 }
 
 .location-header {
-    min-height: 12rem;
+    min-height: 24rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -447,7 +447,7 @@ body {
 }
 
 .location-header h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
     color: white;
     text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -522,8 +522,8 @@ body {
     text-align: center;
     padding: 2rem;
     position: relative;
-    background-position: center 70%;
-    background-size: cover;
+    background-position: 35% 88%;
+    background-size: 110%;
     background-attachment: scroll;
 }
 
