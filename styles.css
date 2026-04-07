@@ -95,36 +95,16 @@ body {
     transform: scale(0.95);
 }
 
-/* Tablet and Desktop */
-@media (min-width: 769px) {
-    .navbar {
-        padding: 0.5rem 2rem;
-        justify-content: flex-start;
-    }
-    
-    .navbar-logo {
-        height: 5.5rem;
-        margin-right: auto;
-    }
-    
-    .navbar-links {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        gap: 0;
-        font-size: 1.125rem;
-    }
-    
-    .navbar-links a {
-        padding: 0.5rem 0.75rem;
-    }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
+/* Mobile and Tablet */
+@media (max-width: 1024px) {
     .navbar {
         padding: 0.5rem 1rem;
         justify-content: center;
+    }
+    
+    .navbar-logo {
+        margin-left: 0;
+        margin-right: 0;
     }
     
     .hamburger {
@@ -165,12 +145,37 @@ body {
     }
 }
 
+/* Desktop */
+@media (min-width: 1025px) {
+    .navbar {
+        padding: 0.5rem 2rem;
+        justify-content: flex-start;
+    }
+    
+    .navbar-logo {
+        height: 5.5rem;
+        margin-right: auto;
+    }
+    
+    .navbar-links {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 0;
+        font-size: 1.125rem;
+    }
+    
+    .navbar-links a {
+        padding: 0.5rem 0.75rem;
+    }
+}
+
 /* Scrollable sections - account for fixed navbar */
 #home, #services, #about, #location, #contact {
     scroll-margin-top: 4rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     #home, #services, #about, #location, #contact {
         scroll-margin-top: 3.5rem;
     }
@@ -329,7 +334,7 @@ body {
     line-height: 1.6;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .services {
         padding: 2rem 1rem;
     }
@@ -340,11 +345,16 @@ body {
     }
     
     .services-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         gap: 1.5rem;
     }
     
     .service-card {
         padding: 1.5rem;
+        width: 100%;
+        max-width: 500px;
     }
     
     .service-card h3 {
