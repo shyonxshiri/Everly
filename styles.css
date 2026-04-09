@@ -55,6 +55,8 @@ body {
     background-color: #68838c;
     border-radius: 0.1rem;
     transition: all 0.3s ease;
+    transform-origin: center;
+    backface-visibility: hidden;
 }
 
 .hamburger.active span:nth-child(1) {
@@ -129,7 +131,7 @@ body {
     }
     
     .navbar-links.active {
-        max-height: 300px;
+        max-height: 400px;
     }
     
     .navbar-links a {
@@ -234,6 +236,14 @@ body {
     text-align: center;
 }
 
+.hero-subheading {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1.5rem !important;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
 @media (max-width: 768px) {
     .hero {
         padding: 1rem;
@@ -248,6 +258,11 @@ body {
     .hero p {
         font-size: 0.95rem;
         margin-bottom: 1.5rem;
+    }
+    
+    .hero-subheading {
+        font-size: 1rem;
+        margin-bottom: 1rem !important;
         max-width: 90%;
     }
 }
