@@ -34,6 +34,8 @@ body {
 
 .navbar-logo {
     height: 5.5rem;
+    width: auto;
+    object-fit: contain;
     flex-shrink: 0;
     margin-left: 48px;
 }
@@ -195,14 +197,33 @@ body {
     position: relative;
     background-position: center;
     background-size: cover;
-    background-attachment: scroll;
-    margin-top: 0;
-    will-change: background-image;
     background-attachment: fixed;
+    background-color: #3a3a3a;
+    margin-top: 0;
+    background-image: image-set(
+        url('public/closeup-support-hands.webp') type('image/webp'),
+        url('public/closeup-support-hands.jpg') 1x
+    );
+}
+
+@media (max-width: 768px) {
+    .hero,
+    .about-section,
+    .about-header,
+    .background-divider,
+    .location-header,
+    .contact-header {
+        background-attachment: scroll;
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .hero {
+    .hero,
+    .about-section,
+    .about-header,
+    .background-divider,
+    .location-header,
+    .contact-header {
         background-attachment: scroll;
     }
 }
@@ -397,13 +418,12 @@ body {
 
 /* About Section */
 .about-section {
-    background-color: transparent;
+    background-color: #f0ede8;
     padding: 0;
     background-position: center;
     background-size: 150%;
     background-attachment: fixed;
     min-height: 24rem;
-    will-change: background-image;
 }
 
 .about-header {
@@ -418,6 +438,7 @@ body {
     background-position: center bottom;
     background-size: cover;
     background-attachment: fixed;
+    background-color: #4a4a4a;
 }
 
 .about-overlay {
@@ -527,7 +548,7 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    will-change: background-image;
+    background-color: #4a4a4a;
 }
 
 .location-overlay {
@@ -617,7 +638,7 @@ body {
     background-position: 35% 88%;
     background-size: 110%;
     background-attachment: fixed;
-    will-change: background-image;
+    background-color: #4a4a4a;
 }
 
 .contact-overlay {

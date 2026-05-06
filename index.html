@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EverlyCareHome - Premium Assisted Living</title>
     <meta name="description" content="Compassionate care and elevated living for seniors">
-    <link rel="preload" as="image" href="public/closeup-support-hands.jpg">
-    <link rel="preload" as="image" href="public/IMG_2086 (1) 2.png">
+    <link rel="preload" as="image" href="public/closeup-support-hands.webp" type="image/webp" fetchpriority="high">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="public/Everly.png" type="image/png">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <img src="public/IMG_2086 (1) 2.png" alt="EverlyCareHome Logo" class="navbar-logo" loading="lazy">
+        <img src="public/IMG_2086 (1) 2.png" alt="EverlyCareHome Logo" class="navbar-logo" loading="eager" decoding="async">
         <button class="hamburger" id="hamburger">
             <span></span>
             <span></span>
@@ -29,7 +28,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <div id="home" class="hero" style="background-image: url('public/closeup-support-hands.jpg');">
+    <div id="home" class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1>Welcome to Everly Care Home!</h1>
@@ -58,15 +57,21 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about-section" style="background-image: url('public/Background%20-%20White.jpg');">
-        <div class="about-header" style="background-image: url('public/nurses-are-well-good-taken-care-elderly-woman-patients-hospital-bed-patients-feel-happiness-medical-healthcare-concept.jpg');">
+    <section id="about" class="about-section"
+        data-bg="public/Background%20-%20White.jpg"
+        data-bg-webp="public/background-white.webp">
+        <div class="about-header"
+            data-bg="public/nurses-are-well-good-taken-care-elderly-woman-patients-hospital-bed-patients-feel-happiness-medical-healthcare-concept.jpg"
+            data-bg-webp="public/nurses.webp">
             <div class="about-overlay"></div>
             <h2>About Us</h2>
         </div>
     </section>
 
     <!-- Background Image Section -->
-    <section class="background-divider" style="background-image: url('public/Background%20-%20White.jpg');">
+    <section class="background-divider"
+        data-bg="public/Background%20-%20White.jpg"
+        data-bg-webp="public/background-white.webp">
         <div class="description-card">
             <p>Everly Care Home is a caring assisted living community dedicated to providing exceptional care with dignity and respect. Our experienced team creates a warm, supportive environment where residents can maintain their independence while receiving the professional support they need. We believe that quality care goes beyond medical services—it's about building meaningful relationships and fostering a sense of community for our residents and their families.</p>
         </div>
@@ -74,7 +79,9 @@
 
     <!-- Location Section -->
     <section id="location" class="location-section">
-        <div class="location-header" style="background-image: url('public/greg-rosenke-3ULMRQZ5APA-unsplash.jpg');">
+        <div class="location-header"
+            data-bg="public/greg-rosenke-3ULMRQZ5APA-unsplash.jpg"
+            data-bg-webp="public/greg-rosenke.webp">
             <div class="location-overlay"></div>
             <h2>Our Location</h2>
         </div>
@@ -98,7 +105,9 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
-        <div class="contact-header" style="background-image: url('public/annie-spratt-goholCAVTRs-unsplash.jpg');">
+        <div class="contact-header"
+            data-bg="public/annie-spratt-goholCAVTRs-unsplash.jpg"
+            data-bg-webp="public/annie-spratt.webp">
             <div class="contact-overlay"></div>
             <h2>Contact Us</h2>
         </div>
